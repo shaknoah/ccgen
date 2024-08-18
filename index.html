@@ -30,21 +30,40 @@
     html {
         font-family: sans-serif;
         -ms-text-size-adjust: 100%;
-        -webkit-text-size-adjust: 100%
-    }
+        -webkit-text-size-adjust: 100%;
+      }
+
 
     body {
         margin: 0
     }
     .navigations {
         display: flex;
-        background-color:black;
+        background-color: black;
         align-items: center;
         justify-content: center;
         height: 100px;
         margin-bottom: 30px;
-        padding: 2;
+        padding: 10px; /* Added padding for better spacing */
       }
+      .navigations .logo {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: auto; /* Pushes the logo to the left */
+    }
+
+      .navigations a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+      .navigations a:hover {
+        text-decoration: underline;
+      }
+
+
       .logo img {
         max-width: 200px;
       }
@@ -424,6 +443,29 @@
        box-sizing: border-box
     } */
 
+    .content-section {
+        padding: 20px;
+        background-color: black;
+        color: #fff;
+      }
+
+      .content-section h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+
+      .content-section p {
+        margin-bottom: 10px;
+      }
+
+      .faq {
+        margin-top: 20px;
+      }
+
+      .faq dt {
+        font-weight: bold;
+      }
+
     input[type=checkbox],
     input[type=radio] {
        margin: 4px 0 0;
@@ -633,6 +675,16 @@
     .btn-primary:active {
     background-image: none
     }
+    .intro-text {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.intro-text p {
+    font-size: 18px;
+    color: #fff; /* Adjust as needed for visibility */
+}
+
 
     .btn-primary[disabled]:focus,
     .btn-primary[disabled]:hover {
@@ -892,9 +944,14 @@
   <body>
     <div id="app">
       <nav class="navigations">
-        <font color="white" height="80" style="bold">CC GENERATOR</font>
-        <!-- <font>Generate Random Credit card </font> -->
+        <div class="logo">CC Generator</div>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
       </nav>
+      <section class="intro-text text-center">
+        <p>Generate random test credit card numbers for testing, development, validation, and/or verification purposes.</p>
+    </section>
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -904,13 +961,58 @@
             <generated-credit-cards></generated-credit-cards>
           </div>
         </div>
+        <section class="content-section">
+         
+
+          <h3>Effortless Webpage Testing</h3>
+          <p>
+            Simplify your web testing process with our credit card number
+            generator. When testing payment pages or processes, you often need
+            credit card data. However, using real credit card information in
+            testing poses risks. Our generator provides a safe solution by
+            creating authentic-looking, yet fictitious, credit card numbers.
+            Ensure the security and accuracy of your testing process
+            effortlessly.
+          </p>
+
+          <h3>Hassle-Free Trials and Testing</h3>
+          <p>
+            Many online services offer free trials or ask for credit card
+            information for verification. But sharing real credit card details
+            can be worrisome. With our credit card generator, effortlessly
+            access trials using fake credit card numbers. Evaluate services
+            risk-free, avoid unexpected charges, and enable developers to test
+            payment systems without compromising real data.
+          </p>
+
+          <h3>Guard Against Online Scams</h3>
+          <p>
+            In a digital world with countless websites, online scams abound.
+            Some websites request credit card details even when alternative
+            payment methods are available. Safeguard yourself from potential
+            scams by using our tool to generate fake credit card numbers.
+            Protect your financial information and navigate the online landscape
+            securely.
+          </p>
+
+          <h3>Streamlined Development</h3>
+          <p>
+            Our generator streamlines the development process, benefiting
+            developers significantly. By integrating simulated credit card data,
+            developers can confidently identify and address potential issues in
+            payment workflows. Ensure a smooth and error-free user experience
+            with our tool.
+          </p>
+
+           
+          </div>
+        </section>
         <input type="hidden" name="IL_IN_ARTICLE" />
         <input type="hidden" name="IL_IN_TAG" value="2" />
       </div>
 
       <center>
-        <b>© 2023 shaknoah and baapji</b>
-
+        <b>© By Shaknoah and Baapji</b>
         <script language="javascript" src="gen-backend.js"></script>
       </center>
     </div>
