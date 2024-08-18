@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact Us</title>
+    <meta
+      name="description"
+      content="Contact Us at CCgenerator - We’d love to hear from you!"
+    />
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    "
+  >
+    <nav style="background-color: #333; color: #fff; padding: 10px">
+      <!-- <div style="font-size: 24px; font-weight: bold">CCgenerator</div> -->
+      <a
+        href="index.html"
+        style="color: #fff; text-decoration: none; margin: 0 15px"
+        >Home</a
+      >
+      <a
+        href="about.html"
+        style="color: #fff; text-decoration: none; margin: 0 15px"
+        >About Us</a
+      >
+      <a href="#" style="color: #fff; text-decoration: none; margin: 0 15px"
+        >Contact Us</a
+      >
+    </nav>
+
+    <div style="padding: 20px; max-width: 600px; margin: auto">
+      <h1 style="color: #333">Contact Us</h1>
+      <p>
+        If you have any questions, suggestions, reports or anything you'd like
+        to share, please don't hesitate to send a message using the form below.
+        Alternatively, you may contact us directly at
+        <a href="mailto:navahum-7@gmail.com style="color: #007bff"
+          >navahum07@gmail.com</a
+        >.
+      </p>
+
+      <form style="display: flex; flex-direction: column; gap: 10px">
+        <label for="first-name" style="font-weight: bold">*First name</label>
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          required
+          style="padding: 10px; border: 1px solid #ccc; border-radius: 5px"
+        />
+
+        <label for="last-name" style="font-weight: bold">Last name</label>
+        <input
+          type="text"
+          id="last-name"
+          name="last-name"
+          style="padding: 10px; border: 1px solid #ccc; border-radius: 5px"
+        />
+
+        <label for="company" style="font-weight: bold">Company</label>
+        <input
+          type="text"
+          id="company"
+          name="company"
+          style="padding: 10px; border: 1px solid #ccc; border-radius: 5px"
+        />
+
+        <label for="email" style="font-weight: bold">*Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          style="padding: 10px; border: 1px solid #ccc; border-radius: 5px"
+        />
+
+        <label for="message" style="font-weight: bold">*Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          required
+          style="padding: 10px; border: 1px solid #ccc; border-radius: 5px"
+        ></textarea>
+
+        <div style="display: flex; align-items: center; gap: 10px">
+          <input
+            type="checkbox"
+            id="agree"
+            name="agree"
+            required
+            style="accent-color: #007bff"
+          />
+          <label for="agree" style="margin: 0"
+            >By selecting this, you agree to our
+            <a href="#" style="color: #007bff">privacy policy</a>.</label
+          >
+        </div>
+
+        <button
+          type="submit"
+          style="
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+          "
+        >
+          Submit inquiry
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
